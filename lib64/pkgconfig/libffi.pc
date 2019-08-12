@@ -1,0 +1,11 @@
+prefix=/usr/musl
+exec_prefix=${prefix}
+libdir=/usr/musl/lib64
+toolexeclibdir=/usr/musl/lib64
+includedir=/usr/musl/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.3-rc0
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}
